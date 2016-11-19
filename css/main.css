@@ -1,0 +1,164 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Chau+Philomene+One|Stardos+Stencil');
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+
+/* Top level selectors */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stardos Stencil', cursive;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+footer {
+    background: #999;
+}
+
+
+/* Header CSS */
+
+.logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+/* CSS for banner */
+
+.banner-caption {
+    text-align: center;
+    background: #999;
+    margin-bottom: 0px;
+}
+
+.banner:hover {
+    overflow: visible;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+}
+
+
+/* Featured section CSS */
+
+figure {
+    margin: 15px 0;
+}
+
+.featured-images img {
+    box-shadow: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.featured-images img:hover {
+    box-shadow: 0px 0px 35px;
+    cursor: pointer;
+}
+
+.featured-images img {
+    height: 180px;
+    width: 360px;
+}
+
+
+/* CSS for Modals */
+
+.modal-dialog {
+    text-align: center;
+}
+
+.modal-body img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+
+/* CSS for footer social icons*/
+
+.social {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 990px) {
+    .banner {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .banner {
+        overflow: hidden;
+        height: 450px;
+        transition: height 0.9s;
+    }
+    .banner img {
+        max-height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featured-images h4 {
+        text-align: none;
+        font-size: 1.1em;
+    }
+    .banner-caption {
+        font-size: 1.1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    figure {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    figure img {
+        margin: 0 auto;
+    }
+    .featured-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .featured-images {
+        text-align: center;
+    }
+    .modal-body p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .featured-images {
+        text-align: center;
+    }
+}
