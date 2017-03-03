@@ -11,7 +11,9 @@
 
 <body>
     <div class="container">
-
+        <div class="top">
+          
+        </div>
         <!--    HEADER    -->
         <header class="row">
             <div class="col-xs-3">
@@ -46,6 +48,10 @@
 
             <!--      FEATURED IMAGES      -->
             <section class="row featured-images">
+            	<figure class="col-md-4 col-sm-6">
+                    <img class="img-responsive" src="img/profile-website-screenshot.jpg" alt="My website" data-toggle="modal" data-target="#modal8" />
+                    <figcaption><h4>My website</h4></figcaption>
+                </figure>
                 <figure class="col-md-4 col-sm-6">
                     <img class="img-responsive" src="img/Class_Logo.jpg" alt="ITB Logo" data-toggle="modal" data-target="#modal1" />
                     <figcaption><h4>Class Logo</h4></figcaption>
@@ -84,7 +90,7 @@
         </section>
 
         <!--    FOOTER    -->
-        <footer>
+        <section class="footer">
             <div class="row">
                 <div class="col-xs-6 copyright">
                     <h4> © Venkat Polumahanti</h4>
@@ -97,7 +103,7 @@
                 </div>
             </div>
 
-        </footer>
+        </section>
     </div>
 
     <!--	MODALS     -->
@@ -219,6 +225,24 @@
                 <div class="modal-body">
                     <img class="img-responsive" src="img/Watermark.png" alt="A watermark for photographs">
                     <p>This was a watermark created to mark my name on my photography works. Colors were chosen carefully to stand out on pictures with any color on the background.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal8 -->
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalTitle8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitle7">My Website</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/profile-website-screenshot.jpg" alt="My profile webpage">
+                    <p>This is my recently developed profile website that has all my career related information. More like an online resume.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
