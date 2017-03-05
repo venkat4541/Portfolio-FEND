@@ -1,176 +1,197 @@
-/* Imports */
-
-@import url('https://fonts.googleapis.com/css?family=Chau+Philomene+One|Stardos+Stencil');
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-
-/* zocial */
-
-[class*="zocial-"]:before {
-    font-family: 'zocial', sans-serif;
-}
-/* Top level selectors */
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-body {
-    font-family: 'Stardos Stencil', cursive;
-    font-family: 'Chau Philomene One', sans-serif;    background: #e6e6e6;
-}.container {    background: white;    padding: 0;}.row {  margin: 0 20px;}
-
-.footer {
-    background: #333;    border-bottom: none;    color: white;
-}
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Chau+Philomene+One|Stardos+Stencil');
+@import url('http://weloveiconfonts.com/api/?family=zocial');
+
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+
+/* Top level selectors */
+
+html, body, div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stardos Stencil', cursive, "Chau Philomene One", sans-serif;
+    background: #e6e6e6;
+}
+
+.container {
+    background: white;
+    padding: 0;
+}
+
+.row {
+    margin: 0 20px;
+}
+
+.footer {
+    background: #333;
+    border-bottom: none;
+    color: white;
+}
+
 .footer a {
     color: white;
     padding: 5px;
     text-decoration: none;
 }
-.footer a:hover {
-  color: #337ab7;
+
+.footer a:hover {
+    color: #337ab7;
 }
-
-/* Header CSS */
-
-.logo {
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-/* CSS for banner */
-
-.banner-caption {
-    text-align: center;    color: white;
-    background: #333;    padding: 5px;
-    margin-bottom: 0px;
-}
+
+
+/* Header CSS */
+
+.logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+/* CSS for banner */
+
+.banner-caption {
+    text-align: center;
+    color: white;
+    background: #333;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
 .banner {
-  -o-transition: all .5s ease-in;
-
-  -ms-transition: all .5s ease-in;
-
-  -moz-transition: all .5s ease-in;
-
-  -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
 }
-
-.banner:hover {
-    height: 100%;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
-
-/* Featured section CSS */
-
-figure {
-    margin: 15px 0;
-}
-
-.featured-images img {
-    box-shadow: none;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-}
-
-.featured-images img:hover {
-    box-shadow: 0px 0px 35px;
-    cursor: pointer;
-}
-
-.featured-images img {
-    height: 180px;
-    width: 360px;
-}
-
-
-/* CSS for Modals */
-
-.modal-dialog {
-    text-align: center;
-}
-
-.modal-body img {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
-}
-
-.modal-footer {
-    text-align: center;
-}
-
-
-/* CSS for footer social icons*/
-
-.social {
-    text-align: right;
-    padding-top: 10px;
-}
-header {
-      margin-top: 10px;
+
+.banner:hover {
+    height: 100%;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
-
-/* Media Queries */
-.top {  height: 10px;  background: #333;}
-@media screen and (max-width: 990px) {
-    .banner {
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    .banner {
-        overflow: hidden;
-        height: 450px;
-    }
-    .banner img {
-        max-height: 100%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .featured-images h4 {
-        text-align: none;
-        font-size: 1.1em;
-    }
-    .banner-caption {
-        font-size: 1.1em;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    figure {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    figure img {
-        margin: 0 auto;
-    }
-    .featured-title {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .featured-images {
-        text-align: center;
-    }
-    .modal-body p {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .featured-images {
-        text-align: center;
-    }
+
+
+/* Featured section CSS */
+
+figure {
+    margin: 15px 0;
+}
+
+.featured-images img {
+    box-shadow: none;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.featured-images img:hover {
+    box-shadow: 0 0 35px;
+    cursor: pointer;
+}
+
+.featured-images img {
+    height: 180px;
+    width: 360px;
+}
+
+
+/* CSS for Modals */
+
+.modal-dialog {
+    text-align: center;
+}
+
+.modal-body img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+
+/* CSS for footer social icons*/
+
+.social {
+    text-align: right;
+    padding-top: 10px;
+}
+
+header {
+    margin-top: 10px;
+}
+
+
+/* Media Queries */
+
+.top {
+    height: 10px;
+    background: #333;
+}
+
+@media screen and (max-width: 990px) {
+    .banner {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .banner {
+        overflow: hidden;
+        height: 450px;
+    }
+    .banner img {
+        max-height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featured-images h4 {
+        font-size: 1.1em;
+    }
+    .banner-caption {
+        font-size: 1.1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    figure {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    figure img {
+        margin: 0 auto;
+    }
+    .featured-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .featured-images {
+        text-align: center;
+    }
+    .modal-body p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .featured-images {
+        text-align: center;
+    }
 }
