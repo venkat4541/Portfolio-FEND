@@ -37,17 +37,23 @@ body {
 .footer {
     background: #333;
     border-bottom: none;
-    color: white;
+    color: #bfbfbf;
 }
 
 .footer a {
-    color: white;
     padding: 5px;
     text-decoration: none;
+    color: #bfbfbf;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 .footer a:hover {
     color: #337ab7;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 
@@ -58,22 +64,30 @@ body {
     margin-top: 5px;
 }
 
+hr {
+  margin: 10px 0;
+}
 
 /* CSS for banner */
 
 .banner-caption {
   text-align: center;
-  color: black;
   background: #eeeeee;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 0;
   font-size: 1.3em;
+  border-radius: 8px 8px 0 0;
+}
+
+.banner img {
+  border-radius: 0 0 8px 8px;
 }
 
 .banner {
     -o-transition: all .5s ease-in;
     -moz-transition: all .5s ease-in;
     -webkit-transition: all .5s ease-in;
+    font-size: 0.9em;
 }
 
 .banner:hover {
@@ -81,10 +95,6 @@ body {
     -o-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-}
-
-.banner {
-  font-size: 0.9em;
 }
 
 
@@ -102,15 +112,19 @@ figcaption h4 {
   font-size: 1.1em;
 }
 
-.featured-images img {
-    box-shadow: none;
-    -o-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
+.featured-images {
+  margin-bottom: 40px;
 }
 
-.featured-images img:hover {
-    box-shadow: 0 0 35px;
+figure {
+    box-shadow: none;
+    -o-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+figure:hover {
+    box-shadow: 0 0 25px #666;
     cursor: pointer;
 }
 
@@ -119,6 +133,9 @@ figcaption h4 {
     width: 360px;
 }
 
+.featured-title {
+  margin-top: 20px;
+}
 
 /* CSS for Modals */
 
@@ -137,11 +154,15 @@ figcaption h4 {
 }
 
 
+.ftr {
+  margin: 0;
+}
+
 /* CSS for footer social icons*/
 
 .social {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
 header {
@@ -152,8 +173,8 @@ header {
 /* Media Queries */
 
 .top {
-    height: 10px;
-    background: #333;
+    height: 15px;
+    background: #bbb;
 }
 
 @media screen and (max-width: 990px) {
