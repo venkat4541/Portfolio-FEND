@@ -70,6 +70,20 @@ hr {
 
 /* CSS for banner */
 
+.ban-outer:hover .ban-inner {
+  height: 907px;
+}
+
+.ban-inner {
+  height: 500px;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.ban-inner img {
+  width: 100%;
+}
+
 .banner-caption {
   text-align: center;
   background: #eeeeee;
@@ -79,28 +93,10 @@ hr {
   border-radius: 8px 8px 0 0;
 }
 
-.banner img {
-  border-radius: 0 0 8px 8px;
-}
-
-.banner {
-    -o-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -webkit-transition: all .5s ease-in;
-    font-size: 0.9em;
-}
-
-.banner:hover {
-    height: 100%;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
 
 /* Featured section CSS */
 
-.featured.col-md-4.col-xs-6 {
+.featured {
     margin: 15px 0;
     position: relative;
 }
@@ -118,12 +114,11 @@ figure {
   bottom: 26px;
   background: #000;
   opacity: 0;
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+  transition: 0.3s cubic-bezier(0.76, 0.27, 0.74, 0.05);
   color: #d6d6d6;
   line-height: 185px;
   font-size: 1.2em;
   transform: scale(0,0);
-
 }
 
 .fig:hover span.mask {
@@ -132,7 +127,7 @@ figure {
   transform: scale(1,1);
 }
 
-figcaption h4 {
+figcaption>h4 {
   margin: 0;
   padding: 5px;
   background: #f6f6f6;
@@ -142,13 +137,6 @@ figcaption h4 {
 .featured-images {
   margin-bottom: 40px;
 }
-
-/*figure {
-    box-shadow: none;
-    -o-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -webkit-transition: .5s ease-in-out;
-}*/
 
 figure:hover {
     /*box-shadow: 0 0 25px #666;*/
@@ -197,16 +185,30 @@ header {
 }
 
 
-/* Media Queries */
-
 .top {
     height: 15px;
     background: #bbb;
 }
 
-@media screen and (max-width: 990px) {
-    .banner {
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .ban-inner {
         height: 100%;
+    }
+
+    .ban-outer:hover .ban-inner {
+      height: 100%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .ban-inner {
+        height: 100%;
+    }
+
+    .ban-outer:hover .ban-inner {
+      height: 100%;
     }
 }
 
