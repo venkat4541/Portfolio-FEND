@@ -100,9 +100,36 @@ hr {
 
 /* Featured section CSS */
 
-figure {
+.featured.col-md-4.col-xs-6 {
     margin: 15px 0;
+    position: relative;
+}
+
+figure {
+    margin: 0;
     border: 1px solid #f6f6f6;
+}
+
+.fig span.mask {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  right: 15px;
+  bottom: 26px;
+  background: #000;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+  color: #d6d6d6;
+  line-height: 185px;
+  font-size: 1.2em;
+  transform: scale(0,0);
+
+}
+
+.fig:hover span.mask {
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 1;
+  transform: scale(1,1);
 }
 
 figcaption h4 {
@@ -116,15 +143,15 @@ figcaption h4 {
   margin-bottom: 40px;
 }
 
-figure {
+/*figure {
     box-shadow: none;
     -o-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
-}
+}*/
 
 figure:hover {
-    box-shadow: 0 0 25px #666;
+    /*box-shadow: 0 0 25px #666;*/
     cursor: pointer;
 }
 
@@ -205,7 +232,6 @@ header {
         font-size: 2em;
     }
     figure {
-        margin-bottom: 20px;
         text-align: center;
     }
     figure img {
