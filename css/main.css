@@ -19,13 +19,15 @@ html, body, div {
 }
 
 body {
-    font-family: 'Stardos Stencil', cursive, "Chau Philomene One", sans-serif;
-    background: #e6e6e6;
+    font-family: 'Stardos Stencil', cursive;
+    font-family: "Chau Philomene One", sans-serif;
+    background: #f6f6f6;
 }
 
 .container {
     background: white;
     padding: 0;
+    box-shadow: 0 0 30px #e6e6e6;
 }
 
 .row {
@@ -60,11 +62,12 @@ body {
 /* CSS for banner */
 
 .banner-caption {
-    text-align: center;
-    color: white;
-    background: #333;
-    padding: 5px;
-    margin-bottom: 0;
+  text-align: center;
+  color: black;
+  background: #eeeeee;
+  padding: 5px;
+  margin-bottom: 0;
+  font-size: 1.3em;
 }
 
 .banner {
@@ -80,11 +83,23 @@ body {
     -webkit-transition: all .5s ease-in-out;
 }
 
+.banner {
+  font-size: 0.9em;
+}
+
 
 /* Featured section CSS */
 
 figure {
     margin: 15px 0;
+    border: 1px solid #f6f6f6;
+}
+
+figcaption h4 {
+  margin: 0;
+  padding: 5px;
+  background: #f6f6f6;
+  font-size: 1.1em;
 }
 
 .featured-images img {
