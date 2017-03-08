@@ -21,7 +21,12 @@ html, body, div {
 body {
     font-family: 'Stardos Stencil', cursive;
     font-family: "Chau Philomene One", sans-serif;
+    /*font-family: "Segoe UI", cursive;*/
     background: #f6f6f6;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 .container {
@@ -61,7 +66,7 @@ body {
 
 .logo {
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 hr {
