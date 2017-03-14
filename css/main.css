@@ -71,7 +71,7 @@ h3 {
     color: #eee;
 }
 
-.credits a {
+.credits a:hover {
     color: #F44336;
 }
 
@@ -80,6 +80,14 @@ h3 {
 .logo {
     margin-left: 10px;
     margin-top: 10px;
+}
+
+.title h1 {
+  margin-top: 30px;
+}
+
+.title h3 {
+  margin-top: 10px;
 }
 
 hr {
@@ -271,5 +279,9 @@ header {
 @media screen and (max-width: 450px) {
     .featured-images {
         text-align: center;
+    }
+
+    .credits {
+      text-align: left;
     }
 }
